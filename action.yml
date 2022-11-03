@@ -1,6 +1,5 @@
 name: 'Auto assign pull request to author'
 description: 'Auto assign pull request to author'
-icon: 'at-sign'
 jobs:
   assign-pr-to-author:
     runs-on: ubuntu-latest

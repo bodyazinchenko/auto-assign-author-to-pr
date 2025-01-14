@@ -27,7 +27,7 @@ jobs:
   auto-assign:
     runs-on: ubuntu-latest
     steps:
-      - uses: bodyazinchenko/auto-assign-author-to-pr@v1.0.0
+      - uses: bodyazinchenko/auto-assign-author-to-pr@v1.0.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 ```

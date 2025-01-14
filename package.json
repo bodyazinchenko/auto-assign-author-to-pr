@@ -1,0 +1,16 @@
+{
+  "name": "auto-assign-author-to-pr",
+  "version": "1.0.0",
+  "description": "This GitHub Action automatically assigns pull requests to their authors. It skips bot-created PRs and PRs that already have assignees.",
+  "main": "scripts/assign-pr-to-author.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "github.com/bodyazinchenko",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0"
+  }
+}

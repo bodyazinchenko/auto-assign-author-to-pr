@@ -1,6 +1,22 @@
 name: 'Auto assign pull request to author'
-description: 'Auto assign pull request to author'
-jobs:
+description: 'Automatically assigns pull requests to their authors, excluding bot-created PRs'
+author: 'bodyazinchenko'
+
+inputs:
+  github_token:
+    default: '${{ github.token }}'
+    required: true
+    description: 'GitHub app installation access token.'
+
+runs:
+  using: 'node20'
+  main: 'scripts/assign-pr-to-author.js'
+
+branding:
+  icon: 'user-plus'
+  color: 'blue'
+
+runs:
   assign-pr-to-author:
     runs-on: ubuntu-latest
     steps:

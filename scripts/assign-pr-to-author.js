@@ -56,5 +56,3 @@ async function run() {
 }
 
 run();
-
-console.log('test');

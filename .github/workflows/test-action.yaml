@@ -11,6 +11,10 @@ jobs:
   auto-assign:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v4
+
       - uses: ./
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
